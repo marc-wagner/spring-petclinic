@@ -19,11 +19,14 @@ public class DataLoader implements CommandLineRunner {
 	private final OwnerService ownerService;
 	private final VetService vetService;
 
-	public DataLoader() {
+/* leaving this noarg constructor in gave me grievance no end,
+as it would instanciate a new blank dataloader instead of the DI handle
+public DataLoader() {
 		ownerService = new OwnerServiceMap();
 		vetService = new VetServiceMap();
 
 	}
+*/
 
 	public DataLoader(OwnerService ownerService, VetService vetService) {
 		this.ownerService = ownerService;

@@ -16,9 +16,6 @@ public class OwnerController {
 	@Autowired
 	public OwnerController(OwnerService ownerService) {
 		this.ownerService = ownerService;
-
-		System.out.println( "ownerController constructor called");
-		System.out.println( ownerService.findAll().size());
 	}
 
 
